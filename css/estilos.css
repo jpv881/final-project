@@ -1,0 +1,340 @@
+
+#divTabs {
+    margin-top: 40px;
+}
+
+.divTabs {
+    margin-top: 40px;
+}
+
+
+[ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide {
+      display: none !important;
+    }
+
+form .ng-invalid.ng-dirty {
+    border-color: #FA787E;
+    //background: rgba(250, 120, 126, 0.5);
+}
+
+.ng-valid.ng-dirty {
+    border-color: #78FA89;
+}
+
+#formCrearRol label {
+    margin-top: 15px;
+}
+
+#formCrearRol .btn.btn-danger,
+#formCrearRol .btn.btn-info {
+    float: right;
+    margin-left: 15px;
+}
+
+#tablaRoles {
+    margin-top: 50px;
+}
+
+.glyphicon.glyphicon-trash {
+    color: red;
+}
+
+.glyphicon.glyphicon-eye-open {
+    color: #4aa8e2;
+}
+
+.modal-content {
+    padding: 15px;
+}
+
+#formCrearRol {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#formEditarRol {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.glyphicon.glyphicon-fire{
+    color:red;
+}
+
+
+#divBusquedaUsuario{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#divBusquedaUsuario input{
+    width:100%;
+}
+
+.fa.fa-thumbs-o-down {
+    color:red;
+}
+
+.fa.fa-thumbs-o-up {
+    color:limegreen;
+}
+
+h4.modal-title {
+    display:inline;
+}
+
+.fa.fa-cogs {
+    color:black;
+}
+
+span.fa.fa-cogs,
+span.fa.fa-edit {
+    cursor:pointer;
+    float:right;
+    padding-left:15px;
+}
+
+span.fa.fa-cogs:hover {
+    color:skyblue;
+}
+span.fa.fa-edit:hover {
+    color:skyblue;
+}
+
+span.fa.fa-cogs {
+    color:coral;
+    font-size:22px;
+}
+span.fa.fa-edit {
+    color:saddlebrown;
+    font-size: 22px;
+}
+
+#formCrearUsuario {
+    margin:25px;
+}
+
+.fa.fa-trash {
+    padding-left:15px;
+    color:crimson;
+    cursor:pointer;
+}
+
+tr.table-danger {
+    background-color:rgba(255, 0, 0,0.2);
+}
+
+#formEditarUsuario {
+    margin:25px;
+}
+
+form button.btn.btn-info {
+    margin-left:15px;
+}
+
+#formEditarPass {
+    margin:25px;
+}
+
+#divTabsEditar {
+    margin-top: 25px;
+}
+
+.red{
+    color:crimson;
+}
+
+.green{
+    color:limegreen;
+}
+
+#divModalGestionarUsuario span.fa.fa-thumbs-down,
+#divModalGestionarUsuario span.fa.fa-thumbs-up{
+    cursor:pointer;
+}
+
+#divModalGestionarUsuario span.fa.fa-long-arrow-right{
+    padding-left:15px;
+}
+
+.orange{
+    color:coral;
+}
+
+.bred{
+    background-color:rgba(220, 20, 60,0.2);
+}
+
+.bgreen{
+    background-color:rgba(50, 205, 50,0.2);
+}
+
+.fa-2x{
+    vertical-align: middle;
+}
+
+#divModalGestionarUsuario .btn.btn-danger,
+#divModalGestionarUsuario .btn.btn-success{
+    padding:0px 12px !important;
+}
+
+#divSelUsuario{
+    margin-top: 20px;
+}
+
+#divSelUsuario button{
+    width:200px;
+    margin-left: 5px;
+}
+
+#divSelUsuario input,
+#divSelUsuario select{
+    display:inline !important;
+    width:200px;
+    margin-left: 5px;
+}
+
+#divSelUsuario .row{
+    margin-bottom:15px;
+}
+
+#divSelUsuario span.fa.fa-male,
+#divSelUsuario span.fa.fa-futbol-o,
+#divSelUsuario span.fa.fa-calendar{
+    width:28px;
+    color:gray;
+}
+
+#seleccion{
+    display:none;
+}
+
+.fa.fa-hourglass-start,
+.fa.fa-hourglass-end{
+    color:#4aa8e2;
+}
+
+.fa.fa-calendar-check-o.span15em{
+    cursor:pointer;
+    color:limegreen;
+}
+
+.fa.fa-calendar-check-o.span15em:hover{
+    color:#337ab7;
+}
+
+.spanHora{
+        font-size: 23px;
+    color: gray;
+}
+
+.span15em{
+    font-size: 1.5em !important;
+}
+
+#divSelUsuario > div > div.col-md-4 > div.col-md-10{
+    padding: 15px;
+    border-style: solid;
+    border: 1px solid #ddd;
+}
+
+#btnBuscarUsuario{
+    width: auto !important;
+}
+
+.btnReservar{
+    width: auto !important;
+}
+
+#formVerReservas{
+    margin-top:20px;
+}
+
+#spanBusquedaReserva{
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+
+#inputBuscarReserva{
+     padding-left: 30px;
+}
+
+.ocultar {
+    display:none;
+}
+
+#divRefresh {
+    float:right;
+}
+
+#divRefresh .fa.fa-refresh {
+    color:limegreen;
+    cursor: pointer;
+}
+
+#tablaVerReservas span.fa.fa-cogs {
+    float:none;
+    padding:0px;
+    font-size: 18px;
+}
+
+#tablaVerReservas > tbody > tr:nth-child(1) {
+    font-weight: bold;
+}
+
+#colSanciones select {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#divModalSelUsuario .modal-body {
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.nav li p,
+.nav li button {
+    margin-left:15px;
+}
+.collapse.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.fa.fa-pie-chart {
+    color:blueviolet;
+}
+
+.fa.fa-file-pdf-o {
+    color:red;
+}
+
+#nav {
+    margin-right: 30px !important;
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    .divTabs {
+        margin-top: 70px;
+    }
+}
+
+a.aMenu.active {
+    color:crimson !important;
+}

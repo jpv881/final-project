@@ -1,0 +1,117 @@
+body {
+    padding-top: 50px;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide {
+    display: none !important;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.tab-content {
+    margin-top: 25px;
+}
+
+.fa.fa-calendar,
+.fa.fa-futbol-o {
+    color: coral;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#tab1 select,
+#tab1 input {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    /* display: block; */
+    font-size: 14px;
+    height: 28px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s;
+    vertical-align: middle;
+}
+
+#tablaFranjas {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+}
+
+#tablaFranjas .btn.btn-default {
+    border-color: coral !important;
+    padding: 5px 8px;
+}
+
+.textoTabla {
+    font-size: 18px;
+}
+
+.fa.fa-hourglass-start,
+.fa.fa-check,
+.fa.fa-hourglass-end {
+    margin-right: 10px;
+}
+
+.fa.fa-calendar-check-o {
+    color: coral;
+}
+
+.fondoRojo {
+    background-color: rgba(204, 0, 0, 0.5);
+}
+
+#tab1 .btn.btn-warning {
+    float: right;
+    height: 28px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.fa.fa-times-circle {
+    color: crimson;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.fa.fa-trash {
+    color: crimson;
+}
+
+#tab2 table td {
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+#tab2 table .btn.btn-default {
+    border-color: crimson;
+}
+
+.fa.fa-check-circle {
+    color: crimson;
+    font-size: 24px;
+}
+
+.navbar-collapse.collapse {
+    font-size:18px;
+}
+
+.nav li p,
+.nav li button {
+    margin-left:15px;
+}

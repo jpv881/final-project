@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Javier Pérez" content="">
+    <title>Instalaciones Deportivas</title>
+    <link rel="shortcut icon" href="">
+    <script src="lib/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/sweetalert/sweetalert.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        img {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .container-fluid {
+            height: 100%;
+        }
+        
+        table {
+            width: 45%;
+            /*			margin-top:3%;*/
+            position: absolute;
+            top: 50%;
+            /* position the top  edge of the element at the middle of the parent */
+            left: 50%;
+            /* position the left edge of the element at the middle of the parent */
+            transform: translate(-50%, -50%);
+            /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+        }
+        
+        #formEntrada {
+            width: 25%;
+            /*			margin-top:3%;*/
+            position: absolute;
+            top: 50%;
+            /* position the top  edge of the element at the middle of the parent */
+            left: 50%;
+            /* position the left edge of the element at the middle of the parent */
+            transform: translate(-50%, -50%);
+            /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+            background-color: rgba(255, 255, 255, 0.8);
+            display: none;
+        }
+        
+        #formRegistro {
+            /*			margin-top:3%;*/
+            position: absolute;
+            top: 50%;
+            /* position the top  edge of the element at the middle of the parent */
+            left: 50%;
+            /* position the left edge of the element at the middle of the parent */
+            transform: translate(-50%, -50%);
+            /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+            background-color: rgba(255, 255, 255, 0.8);
+            display: none;
+        }
+        
+/*
+        @media only screen and (min-width: 384px) {
+            .container-fluid {
+                background-image: url("imagenes/child384.jpg");
+                background-repeat: no-repeat;
+                background-color: #CBBF77;
+                background-position: center;
+            }
+        }
+        
+        @media only screen and (min-width: 480px) {
+            .container-fluid {
+                background-image: url("imagenes/child480.jpg");
+                background-repeat: no-repeat;
+                background-color: #CBBF77;
+                background-position: center;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .container-fluid {
+                background-image: url("imagenes/child768.jpg");
+                background-repeat: no-repeat;
+                background-color: #CBBF77;
+                background-position: center;
+            }
+        }
+        
+        @media only screen and (min-width: 1360px) {
+            .container-fluid {
+                background-image: url("imagenes/child1366.jpg");
+                background-repeat: no-repeat;
+                background-color: #CBBF77;
+                background-position: center;
+            }
+        }
+        
+        @media only screen and (min-width: 1440px) {
+            .container-fluid {
+                background-image: url("imagenes/child1440.jpg");
+                background-repeat: no-repeat;
+                background-color: #CBBF77;
+                background-position: center;
+            }
+        }
+        
+        @media only screen and (min-width: 1920px) {
+            .container-fluid {
+                background-image: url("imagenes/child.jpg");
+                background-repeat: no-repeat;
+                background-color: #CBBF77;
+                background-position: center;
+            }
+        }
+*/
+        @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+      #divTexto {
+        position: absolute !important;
+        left: 16% !important;
+        top: 6% !important;
+        width: 500px !important;
+      }
+}
+        
+        @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 750px)  {
+      #divTexto {
+        position: absolute !important;
+        top: 10% !important;
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+        width:300px !important;
+        left: 50% !important;
+        margin-left: -150px !important;
+      }
+      .h1, h1 {
+        font-size: 18px;
+          margin: 0px;
+      }
+      #divTitulo {
+          padding-left:0px !important;
+          padding-right:0px !important;
+      }
+      #formEntrada {
+          width: 90% !important;
+      }
+      #formRegistro {
+          width: 90% !important;
+          transform: translate(-50%, -0%);
+          top: 50px;
+      }
+}
+        
+        #divTitulo {
+            border-style: solid;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            letter-spacing: 15px;
+            color: white;
+            /*
+            margin-top: 40px;
+            margin-bottom: 40px;
+*/
+        }
+        
+        #divTitulo:nth-child(1) {
+            color: white;
+        }
+        
+        #divTexto {
+            position: absolute;
+            left: 15%;
+            top: 17%;
+        }
+        
+        #divTexto:nth-child(1) {
+            letter-spacing: 15px;
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none !important;
+        }
+        
+        p {
+            color: white;
+        }
+        
+        .glyphicon.glyphicon-remove-sign {
+            color: #B03535;
+        }
+        
+        form.ng-submitted input.ng-invalid {
+            border-color: #FA787E;
+        }
+        
+        .ng-invalid.ng-dirty {
+            border-color: #FA787E;
+        }
+        
+        .ng-valid.ng-dirty {
+            border-color: #78FA89;
+        }
+        .glyphicon.glyphicon-remove-sign {
+            padding-right:20px;
+        }
+        .container-fluid {
+            background-color: black;
+            margin:0px !important;
+            padding:0px !important;
+        }
+        
+        img {
+            position: absolute;
+            top: 50%;
+            /* position the top  edge of the element at the middle of the parent */
+            left: 50%;
+            /* position the left edge of the element at the middle of the parent */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <!--[if IE]>
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+				<![endif]-->
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67906875-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+</head>
+
+<body ng-app="instalaciones">
+
+    <div class="container-fluid">
+        <img class="img-responsive" src="imagenes/child.jpg">
+        <div id="divTexto">
+            <center>
+                <a id="linkEntrada" href="#"> entra</a>
+                <br>
+                <br>
+                <p>|</p>
+                <br>
+                <p>|</p>
+                <br>
+                <p>|</p>
+                <br>
+            </center>
+            <div id="divTitulo">
+                <center><h1> <span class="glyphicon glyphicon-calendar"></span>RESERVAS</h1></center>
+            </div>
+            <center>
+                <br>
+                <p>|</p>
+                <br>
+                <p>|</p>
+                <br>
+                <p>|</p>
+                <br>
+                <a id="linkRegistro" href="#">regístrate</a>
+            </center>
+        </div>
+
+        <!--formulario entrada-->
+                <div class="thumbnail" id="formEntrada" ng-controller="FormularioEntradaController as formEntrada">
+                <div class="form-group">
+                <a href="#" class="pull-right" id="ocultarLogin">
+                    <span class="glyphicon glyphicon-remove-sign" id="cancelarLogin"></span>
+                </a>
+                </div>
+            <form name="enterForm" class="form-horizontal" ng-submit="enterForm.$valid && formEntrada.submitEntrada(loginEmail,loginPass)" novalidate>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="email" class="form-control" id="userLogin" placeholder="email" autofocus required ng-model="loginEmail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="password" class="form-control" id="passLogin" placeholder="contraseña" required ng-model="loginPass">
+                    </div>
+                </div>
+                <center><strong><span id="spanError"></span></strong></center>
+                <center>
+                    <button class="btn btn-info" type="submit" id="btnAcceder">entrar</button>
+                </center>
+            </form>
+        </div>
+
+        <!--formulario registro-->
+        <div class="thumbnail col-md-5" id="formRegistro" ng-controller="FormularioRegistroController as formRegistro">
+            
+            <form class="form-horizontal" role="form" name="formCrearUsuario" ng-submit="formCrearUsuario.$valid && 
+                formRegistro.submitRegistro(nombre,primerApellido,segundoApellido,direccion,ciudad,codigoPostal,dni,telefono,email,repeatemail,pass,repeatpass)" novalidate>
+                <div class="form-group">
+                <a href="#" class="pull-right" id="cancelarEntrada">
+                    <span class="glyphicon glyphicon-remove-sign" id="cancelarRegistro"></span>
+                </a>
+            </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Nombre*</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="nombre" required ng-model="nombre">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Primer Apellido*</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="primerApellido" required ng-model="primerApellido">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Segundo Apellido*</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="segundoApellido" required ng-model="segundoApellido">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Dirección*</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="direccion" required ng-model="direccion">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Ciudad*</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="ciudad" required ng-model="ciudad">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Código Postal*</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="codigoPostal" required ng-model="codigoPostal">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">DNI*</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="dni" required ng-model="dni">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Teléfono*</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="telefono" required ng-model="telefono">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Email*</label>
+                    <div class="col-md-9">
+                        <input type="email" class="form-control" id="email" required ng-model="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Repetir Email*</label>
+                    <div class="col-md-9">
+                        <input type="email" class="form-control" id="email" required ng-model="repeatemail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Contraseña*</label>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" id="pass" required ng-model="pass">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Repetir Contraseña*</label>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" id="pass" required ng-model="repeatpass">
+                        <p style="color:black;"><b>* Todos los campos son obligatorios</b></p>
+                        <span id="spanErrorRegistro" style="color:red;"></span>
+                    </div>
+                </div>
+                <button class="btn btn-info pull-right" type="submit">Completar Registro</button>
+                <!--                <button class="btn btn-danger pull-right">Cancelar</button>-->
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="entradayregistro.js"></script>
+</body>
+
+</html>

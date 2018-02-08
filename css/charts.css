@@ -1,0 +1,40 @@
+body {
+    padding-top: 50px;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide {
+    display: none !important;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.tab-content {
+    margin-top: 25px;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+#piechart,
+#piechartSemanal {
+    height: 300px;
+}
+
+#franjasOcupadas {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+table h4 {
+    margin-right: 40px;
+}
